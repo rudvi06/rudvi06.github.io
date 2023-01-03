@@ -10,6 +10,7 @@
   margin: 0;
   font-family: 'Courier New', monospace;
   font-size: 23px;
+  background: #1c2833;
 }
 
 .bg-image {
@@ -41,6 +42,35 @@
   padding: 20px;
   text-align: center;
 }
+
+.project{
+  color: white;
+  font-weight: bold;
+  padding: 30px;
+  text-align: center;
+}
+
+#fbox{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 0 0 10px;
+  border: 1px solid #1b2631 ;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.fbutton{
+  font-size:20px;
+  padding:10px;
+  background: #e8f8f5;
+  border-radius: 40%;
+  border-width: 0;
+}
+
+.fbutton:hover{
+  background: #d1f2eb  ;
+}
+
 a:link {
   color:  #d6eaf8;
   background-color: transparent;
@@ -66,11 +96,18 @@ a:visited {
         <i class="fa fa-github" style="font-size:35px"></i>
         <a href="https://github.com/rudvi06">GitHub</a> </p>
 
-    <p> Also don't forget to leave <a href="#feedback">feedback</a>!&#128522;</p>
+    <p> Also don't forget to provide your valuable <a href="#feedback">feedback</a>!&#128522;</p>
 
 </div>
-<p>Following are the links to my project,<br> Note: They are under construction!</p>
-<a href="/ecommerce">Ecommerce</a>
-<a href="/chat">ChatBot</a>
+<div class="project">
+    <p>Following are my project, Note: They are under construction!&#128736;</p>
+    <a href="/ecommerce">Ecommerce</a>
+    <a href="/chat">ChatBot</a>
+    <p id="feedback">If you have found my page interesting so far or if you have any opportunities for me, you can send me a
+        <a href="mailto: rudvi306@gmail.com"><i class="fa fa-envelope" style="font-size:25px;color:red"></i> mail</a> or simply leave a feedback below.</p>
+    <input type="text" id="fbox" name="fbox" placeholder="&#128172;">
+    <button class="fbutton"><i class="fa fa-send"></i></button>
+</div>
+
 </body>
 </html>
