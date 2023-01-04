@@ -26,7 +26,7 @@
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 110%;
 }
 
 .bg-text {
@@ -38,7 +38,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 50%;
+  width: 70%;
   padding: 20px;
   text-align: center;
 }
@@ -50,7 +50,7 @@
   text-align: center;
 }
 
-#fbox{
+.fbox{
   width: 50%;
   padding: 12px 20px;
   margin: 0 0 10px;
@@ -82,12 +82,20 @@ a:visited {
 }
   
 </style>
+
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+    <script type="text/javascript">
+		function sendFeedback() {
+			localStorage.setItem('feedback', document.getElementById("fbox").value);
+			console.log(localStorage.getItem('feedback'));
+		}
+	</script>
 </head>
 <body>
 <div class='bg-image'></div>
 <div class="bg-text">
     <h1>Hello!</h1>
-    <p>I am Rudvi Manjrekar and I am a Java Developer who has completed graduation from University of Mumbai in Bachelor of Computer Engineering.
+    <p>I am Rudvi Manjrekar and I am a Java Developer.
         Scroll down to check out my projects.</p>
 
     <p>Or do you want to know more about me?<br>
@@ -95,7 +103,7 @@ a:visited {
         <a href="https://www.linkedin.com/in/rudvi-manjrekar-894b7518b/">Linkedin</a>
         <i class="fa fa-github" style="font-size:35px"></i>
         <a href="https://github.com/rudvi06">GitHub</a> </p>
-
+    
     <p> Also don't forget to provide your valuable <a href="#feedback">feedback</a>!&#128522;</p>
 
 </div>
@@ -105,8 +113,8 @@ a:visited {
     <a href="/chat">ChatBot</a>
     <p id="feedback">If you have found my page interesting so far or if you have any opportunities for me, you can send me a
         <a href="mailto: rudvi306@gmail.com"><i class="fa fa-envelope" style="font-size:25px;color:red"></i> mail</a> or simply leave a feedback below.</p>
-    <input type="text" id="fbox" name="fbox" placeholder="&#128172;">
-    <button class="fbutton"><i class="fa fa-send"></i></button>
+    <input type="text" class="fbox" id="fbox" placeholder="&#128172;">
+    <button onclick="sendFeedback()" class="fbutton"><i class="fa fa-send"></i></button>
 </div>
 
 </body>
