@@ -11,19 +11,15 @@
   font-family: 'Courier New', monospace;
   font-size: 23px;
   background: #1c2833;
+  color: white;
+  font-weight: bold;
+  text-align: center;
 }
 
 .bg-image {
-  /* The image used */
   background-image: url("code.jpg");
-
-  /* Add the blur effect */
   -webkit-filter: blur(3px);
-
-  /* Full height */
   height: 100%;
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: 110%;
@@ -43,12 +39,16 @@
   text-align: center;
 }
 
-.project{
+.projects{
   color: white;
   font-weight: bold;
   padding: 30px;
   text-align: center;
 }
+
+.chatbot{
+  padding:30px;
+ }
 
 .fbox{
   width: 50%;
@@ -70,6 +70,10 @@
 .fbutton:hover{
   background: #d1f2eb  ;
 }
+
+#feedback{
+  clear: left;
+  }
 
 a:link {
   color:  #d6eaf8;
@@ -107,10 +111,25 @@ a:visited {
     <p> Also don't forget to provide your valuable <a href="#feedback">feedback</a>!&#128522;</p>
 
 </div>
-<div class="project">
+<div class="projects">
     <p>Following are my project, Note: They are under construction!&#128736;</p>
-    <a href="/ecommerce">Ecommerce</a>
-    <a href="/chat">ChatBot</a>
+    <div class="project" >
+        <video style="float:left; margin-right:50px" width="400" height="400" controls>
+            <source src="Chatbot.mp4" type="video/mp4">
+            <source src="Chatbot.ogg" type="video/ogg">
+        </video>
+        <div class="chatbot">
+            <a href="/chat">ChatBot</a>
+            <ul>
+                <li>Developed a chatbot as a hobby project.</li>
+                <li>Incorporated alicebot's datasets as well as creating new AIML files.</li>
+                <li>Working on an automated Email option for unsatisfied query results and links that would redirect for more information.</li>
+                <li>Built using HTML, CSS, Javascript, Jquery, AJAX, ProgramAB and SpringBoot.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="feedbackC" style="padding:30px">
     <p id="feedback">If you have found my page interesting so far or if you have any opportunities for me, you can send me a
         <a href="mailto: rudvi306@gmail.com"><i class="fa fa-envelope" style="font-size:25px;color:red"></i> mail</a> or simply leave a feedback below.</p>
     <input type="text" class="fbox" id="fbox" placeholder="&#128172;">
